@@ -27,7 +27,7 @@ void setup() {
   size (1200, 600, P3D);
   perspective();
   savedImages.add(loadImage("data/cavreal.jpg"));
-  //initTwitter();
+  initTwitter();
   ellipseMode(CENTER);
   //image(savedImages.get(savedImages.size()-1), 0, 0);
   setStalag();
@@ -43,6 +43,7 @@ void setup() {
   grids[3] = new Grid(width*2, height, 25, width/2, 0, -620, 0, 15, 0, 1);         // center right wall
   grids[4] = new Grid(width*2, height, 25, 5*width/4, 0, 0, 0, -85, 0, gridMode);
   grids[5] = new Grid(width*2, height*2, 25, -width/2, 0, 0, -90, 0, 0, gridMode);           //ceiling
+  
 }
 
 void draw() {
@@ -85,6 +86,10 @@ void setStalag() {
     features.add(new Stalag());
     features.add(new Stalac());
   }
+  // int zrand, int xrand, int base, int radiusDec, int yspacing
+  features.add(new Stalag(-300, width/2+30, 80, 5, 20));
+  features.add(new Stalac(-400, width/2+50, 90, 5, 20));
+  features.add(new Stalac(-300, width/2-50, 100, 5, 20));
 }
 
 void drawFeatures() {

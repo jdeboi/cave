@@ -4,6 +4,10 @@
 class Stalac extends Features {
 
   
+  Stalac(int zrand, int xrand, int base, int radiusDec, int yspacing) {
+    super(zrand, xrand, base, radiusDec, yspacing);
+    startingY = height;
+  }
   
   Stalac() {
     super();

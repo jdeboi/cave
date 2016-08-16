@@ -49,7 +49,7 @@ public class Grid {
 
     for (int i = 0; i < rows-1; i++ ) { 
       beginShape(QUAD_STRIP); 
-      PImage img =savedImages.get(savedImages.size()-1);
+      PImage img =savedImages.get(0);
       texture(img);
       for (int j = 0; j < cols-1; j++) {
         //noStroke();

@@ -2,6 +2,11 @@
 class Stalag extends Features {
 
 
+  Stalag(int zrand, int xrand, int base, int radiusDec, int yspacing) {
+    super(zrand, xrand, base, radiusDec, yspacing);
+    startingY = 0;
+  }
+  
   Stalag() {
     super();
     startingY = 0;
