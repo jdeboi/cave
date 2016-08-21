@@ -32,7 +32,7 @@ class Stalac extends Features {
 
       
       gradientStroke(i);
-      drip(i);
+      //drip(i);
 
       translate(xrand, startingY - i*yspacing, zrand);
       cube(base - radiusDec*i+randWidth[i], yspacing, base - radiusDec*i+randWidth[i]);

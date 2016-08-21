@@ -26,7 +26,7 @@ int lightDir = 1;
 void setup() {
   size (1200, 600, P3D);
   perspective();
-  savedImages.add(loadImage("data/cavreal.jpg"));
+  savedImages.add(loadImage("data/0035.jpg"));
   initTwitter();
   ellipseMode(CENTER);
   //image(savedImages.get(savedImages.size()-1), 0, 0);
